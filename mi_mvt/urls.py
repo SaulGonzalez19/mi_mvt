@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from entregable.views import saludar, imc
+from entregable.views import saludar, imc, mostrar_familiares
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludar/', saludar),
     path('mostrar-imc/<peso>/<altura>', imc),
+    path('mi-familia/', mostrar_familiares),
 ]
