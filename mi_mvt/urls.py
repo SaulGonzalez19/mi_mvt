@@ -20,6 +20,6 @@ from entregable.views import saludar, imc, mostrar_familiares
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludar/', saludar),
-    path('mostrar-imc/<peso>/<altura>', imc),
+    path('mostrar-imc/<int:peso>/<int:altura>', imc),
     path('mi-familia/', mostrar_familiares),
 ]
