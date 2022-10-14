@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from entregable.views import saludar, imc, mostrar_familiares
+from blog.views import index as blog_index
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
     # path('saludar/', saludar),
     # path('mostrar-imc/<int:peso>/<int:altura>', imc),
     path('mi-familia/', mostrar_familiares),
+    path('blog/', blog_index),
 ]
