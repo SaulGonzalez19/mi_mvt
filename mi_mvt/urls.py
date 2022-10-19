@@ -19,9 +19,9 @@ from entregable.views import saludar, imc, mostrar_familiares, BuscarFamiliar
 from blog.views import index as blog_index
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
-    # path('saludar/', saludar),
-    # path('mostrar-imc/<int:peso>/<int:altura>', imc),
+    path('admin/', admin.site.urls),
+    path('saludar/', saludar),
+    path('mostrar-imc/<int:peso>/<int:altura>', imc),
     path('mi-familia/', mostrar_familiares),
     path('blog/', blog_index),
     path('mi-familia/buscar', BuscarFamiliar.as_view())
